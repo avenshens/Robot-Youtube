@@ -6,9 +6,6 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# On installe le package localement dans le dossier de travail
-RUN npm install opencode-ai
+RUN npm install -g opencode-ai
 
-COPY script.js /app/script.js
-
-CMD ["node", "script.js"]
+CMD ["opencode", "run", "Écris un script dynamique de moins de 50 secondes pour un Short YouTube sur un secret ou une astuce cachée dans The Legend of Zelda. Trouve des vidéos d'illustration sur le gaming ou la tech sur Pexels, et assemble le tout en une vidéo verticale (9:16) nommée zelda_short.mp4 avec FFmpeg."]
