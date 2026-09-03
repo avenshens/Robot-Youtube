@@ -1,4 +1,4 @@
-const { OpenCodeAgent } = await import(process.env.NODE_PATH + '/opencode-ai/src/index.js').catch(() => import('opencode-ai'));
+import { OpenCodeAgent } from 'opencode-ai';
 
 async function genererShortZelda() {
   const agent = new OpenCodeAgent();
