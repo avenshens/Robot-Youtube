@@ -10,4 +10,4 @@ WORKDIR /app
 
 EXPOSE 3000
 
-CMD ["opencode", "--server", "--port", "3000"]
+CMD ["opencode", "serve", "--port", "3000", "--hostname", "0.0.0.0"]
