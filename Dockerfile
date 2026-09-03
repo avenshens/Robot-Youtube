@@ -11,7 +11,7 @@ RUN npm install -g opencode-ai
 # Copie le script d'écoute dans la machine
 COPY serveur.js /app/serveur.js
 
-EXPOSE 3000
+EXPOSE 10000
 
 # Lance le serveur web d'écoute
 CMD ["node", "serveur.js"]
