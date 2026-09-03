@@ -8,6 +8,8 @@ RUN npm install -g opencode-ai
 
 COPY script.js /app/script.js
 
+ENV NODE_PATH=/usr/local/lib/node_modules
+
 WORKDIR /app
 
 EXPOSE 3000
