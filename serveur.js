@@ -1,7 +1,7 @@
 import http from 'http';
 import { exec } from 'child_process';
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 
 const server = http.createServer((req, res) => {
   if (req.url === '/lancer-zelda') {
