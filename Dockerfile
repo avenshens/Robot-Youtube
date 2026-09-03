@@ -8,4 +8,5 @@ WORKDIR /app
 
 RUN npm install -g opencode-ai
 
-CMD ["opencode", "run", "--pure", "Écris un script dynamique de moins de 50 secondes pour un Short YouTube sur un secret ou une astuce cachée dans The Legend of Zelda. Trouve des vidéos d'illustration sur le gaming ou la tech sur Pexels, et assemble le tout en une vidéo verticale (9:16) nommée zelda_short.mp4 avec FFmpeg."]
+# Utilisation forcée du modèle Llama 3.3 70B pour valider les requêtes OpenRouter
+CMD ["opencode", "run", "--model", "openrouter/meta-llama/llama-3.3-70b-instruct", "Écris un script dynamique de moins de 50 secondes pour un Short YouTube sur un secret ou une astuce cachée dans The Legend of Zelda. Trouve des vidéos d'illustration sur le gaming ou la tech sur Pexels, et assemble le tout en une vidéo verticale (9:16) nommée zelda_short.mp4 avec FFmpeg."]
